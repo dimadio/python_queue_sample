@@ -1,4 +1,7 @@
-Sample of Priority Queue usage
+Sample batch queue execiution wrapper
 
-The test shows that added tasks for user TEST are executed before tasks of user TEST2
-Ordering inside the user's batch is not maintained
+Allows to issue tasks from one or different threads.
+tasks are executed in order of batch adding, order inside the batch is not guaranteed
+
+Internals:
+Priority Queue with execiution wrapper and task example

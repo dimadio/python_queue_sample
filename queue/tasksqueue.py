@@ -36,7 +36,7 @@ class TasksQueue:
 
     def _manage(self):
         while self.running:
-            task_data = self.queue.pull_wait(2)
+            task_data = self.queue.pull_wait(1)
             if task_data:
                 (User, task) = task_data
                 ## print "run task ", task
